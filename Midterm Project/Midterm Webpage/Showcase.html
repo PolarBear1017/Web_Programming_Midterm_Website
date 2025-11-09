@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hui Fan's Dog Cafe</title>
+
+    <!-- link .css and .js -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="site-shell">
+        <header class="site-header">
+            <div class="site-brand">
+                <p class="site-subtitle">Dream Space Personal Website</p>
+                <h1>Hui Fan's Dog Cafe</h1>
+            </div>
+            <nav>
+                <ul class="flex-nav">
+                    <li><a href="/homepage.html">Home</a></li>
+                    <li><a href="/About.html">About</a></li>
+                    <li><a href="/Gallery.html">Gallery</a></li>
+                    <li><a class="active" href="/Showcase.html">Showcase</a></li>
+                    <li><a href="/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="content-card">
+                <h2>Dog Cafe Staff Schedule</h2>
+                <table id="table_class">
+                    <tr>
+                        <th scope="col">Monday</th>
+                        <th scope="col">Tuesday</th>
+                        <th scope="col">Wednesday</th>
+                        <th scope="col">Thursday</th>
+                        <th scope="col">Friday</th>
+                        <th scope="col">Saturday</th>
+                        <th scope="col">Sunday</th>
+                    </tr>
+            <tr>
+                <td>
+                    <img class="showcase_dog_image" src="samoyed.jpg" alt="samoyed">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="Shiba.jpeg" alt="Shiba">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="bichon.jpeg" alt="Bichon Frise">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="maltese.jpeg" alt="Maltese">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="poodle.jpeg" alt="Poodle">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="pomeranian.jpeg" alt="Pomeranian">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="Shiba.jpeg" alt="Shiba">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="showcase_dog_image" src="poodle.jpeg" alt="Poodle">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="samoyed.jpg" alt="samoyed">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="pomeranian.jpeg" alt="Pomeranian">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="bichon.jpeg" alt="Bichon Frise">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="Shiba.jpeg" alt="Shiba">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="maltese.jpeg" alt="Maltese">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="samoyed.jpg" alt="samoyed">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="showcase_dog_image" src="bichon.jpeg" alt="Bichon Frise">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="poodle.jpeg" alt="Poodle">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="maltese.jpeg" alt="Maltese">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="samoyed.jpg" alt="samoyed">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="pomeranian.jpeg" alt="Pomeranian">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="Shiba.jpeg" alt="Shiba">
+                </td>
+                <td>
+                    <img class="showcase_dog_image" src="bichon.jpeg" alt="Bichon Frise">
+                </td>
+            </tr>
+        </table>
+
+                <div class="control-panel">
+                    <p>Change The Table Width</p>
+                    <div class="control-row">
+                        <button id="ChangeTableWidth1000px">1000px</button>
+                        <button id="ChangeTableWidth1200px">1200px</button>
+                    </div>
+
+                    <p>Change The Border and the Spacing Width</p>
+                    <div class="control-row">
+                        <button type="button" id="ChangeBorderAndSpacingWidth1px">1px</button>
+                        <button type="button" id="ChangeBorderAndSpacingWidth10px">10px</button>
+                        <button type="button" id="ChangeBorderAndSpacingWidth20px">20px</button>
+                    </div>
+
+                    <p>Change The Table Color</p>
+                    <div class="control-row swatch-group">
+                        <button type="button" id="ChangeColorGreen" style="background-color: rgb(156, 218, 166);"></button>
+                        <button type="button" id="ChangeColorBlue" style="background-color: rgb(149, 250, 252);"></button>
+                        <button type="button" id="ChangeColorPink" style="background-color: rgb(255, 208, 252);"></button>
+                        <button type="button" id="ChangeColorYellow" style="background-color: rgb(255, 230, 166);"></button>
+                    </div>
+
+                    <button id="reset" class="btn reset-btn">Reset</button>
+                </div>
+            </section>
+
+            <section class="content-card" id="Polariod_container">
+                <h2>Today Cute Dog picture</h2>
+                <div id="image_frame">
+                    <img id="Polariod_image" src="image/image_1.jpg" alt="image_1">
+                </div>
+
+                <div class="controls">
+                    <button type="button" class="btn" id="btn_prev">&lt; Previous</button>
+
+                    <p>Image <span id="current-count">1</span> of <span id="total-count">5</span></p>
+
+                    <button type="button" class="btn" id="btn_next">Next &gt;</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
